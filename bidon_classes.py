@@ -20,12 +20,8 @@ class Bid2(object):
 
 class Bidon(object):
 
-#    print """
-#    >>> from bidon import Bidon
-#    [Bidon] coucou
-#    """
-#    # basse prio
-#    logger.warning("coucou")
+    # basse prio
+    logger.warning("coucou")
 
     def __init__(self):
         print """==============================
@@ -35,17 +31,17 @@ class Bidon(object):
         logger.warning("coucou")
 
     @classmethod
-    def methode_bla(cls):
+    def class_method(cls):
         print """==============================
->>> Bidon.methode_bla()
+>>> Bidon.class_method()
 [Bidon] coucou
 =============="""
         logger.warning("coucou")
 
     @staticmethod
-    def methode_blaba():
+    def static_method():
         print """==============================
->>> Bidon.methode_blaba()
+>>> Bidon.static_method()
 [Bidon] coucou
 =============="""
         # basse prio
